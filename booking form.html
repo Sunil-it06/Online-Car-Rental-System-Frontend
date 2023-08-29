@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="booking css.css">
+</head>
+<body>
+    <h1>CAR BOOKING FORM</h1>
+<form action="reservation.php" method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Your Phone</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">Seat Capacity</label>
+    <input type="number" id="adult" name="total_adults" placeholder="4" min="4" max="9" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Car rating in stars</label>
+    <input type="number" id="child" name="total_children" placeholder="2" min="2" max="5" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="rent-date">Renting Date</label>
+    <input type="date" id="checkin-date" name="checkin" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="checkout-date">Return Date</label>
+    <input type="date" id="checkout-date" name="checkout" required>
+  </div>
+  <div class="elem-group">
+    <label for="room-selection">Select Car</label>
+    <select id="room-selection" name="room_preference" required>
+        <option value="">Choose a car from the List</option>
+        <option value="mercedez">Mercedez</option>
+        <option value="Audi">Audi</option>
+        <option value="BMW">BMW</option>
+        <option value="landrover">landrover</option>
+        <option value="skoda">Skoda</option>
+    </select>
+  </div>
+  <hr>
+  <div class="elem-group">
+    <label for="message">Renting Price</label>
+    < <label for="room-selection">Select Car</label>
+    <select id="room-selection" name="room_preference" required>
+        <option value="">Choose a car from the List</option>
+        <option value="mercedez">200/- per 10km</option>
+        <option value="Audi">200/- per 10km</option>
+        <option value="BMW">BMW</option>
+        <option value="landrover">landrover</option>
+        <option value="skoda">Skoda</option>
+    </select>
+  </div>
+  <button type="rent now">rent now</button>
+  <script src="booking js.js"></script>
+</form>
+</body>
+</html>
