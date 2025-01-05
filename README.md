@@ -34,7 +34,7 @@ To view and run the project locally:
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/your-username/car-rental-website.git](https://github.com/Sunil-it06/Online-Car-Rental-System-Frontend.git
+git clone [https://github.com/your-username/car-rental-website.git](https://github.com/Sunil-it06/Online-Car-Rental-System-Frontend.git](https://github.com/Sunil-it06/Online-Car-Rental-System-Frontend.git)
 Navigate to the project directory:
 bash
 Copy code
